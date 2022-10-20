@@ -5,11 +5,21 @@ import random
 
 def get_first_part_of_name(name):
 
+	first_name= name.split("-")[0]
 
-	return ""
+	capitalized = first_name[0].upper() + first_name[1:].lower()
+
+	return "Bonjour," + capitalized
+
 
 def get_random_sentence(animals, adjectives, fruits):
-	return ""
+	basic_sentence ="Aujourd’hui, j’ai vu un %s s’emparer d’un panier %s plein de %s."
+
+	words=[]
+	for word_set in (animals, adjectives, fruits):
+		words += [word_set[random.randrange(0, len(word_set))]]
+
+	return basic_sentence % tuple(words)
 
 def encrypt(text, shift):
 	return ""
