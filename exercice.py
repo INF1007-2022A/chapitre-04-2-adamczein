@@ -4,6 +4,8 @@
 import random
 
 def get_first_part_of_name(name):
+
+
 	return ""
 
 def get_random_sentence(animals, adjectives, fruits):
